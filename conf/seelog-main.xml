@@ -1,0 +1,14 @@
+<seelog>
+    <outputs formatid="main">
+		<rollingfile type="size" filename="log.txt" maxsize="524288000" maxrolls="10" />
+        <filter levels="info,debug,critical,error">
+            <console />
+        </filter>
+        <!--filter levels="info,debug,critical,error">
+            <file path="log.txt" />
+        </filter-->
+    </outputs>
+    <formats>
+        <format id="main" format="%Date/%Time [%LEV] %Msg%n"/>
+    </formats>
+</seelog>
